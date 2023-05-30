@@ -1,7 +1,7 @@
 import { StyledCard } from "./StyledCard";
 
 const PlayerCard = () => {
-  return <StyledCard />;
+  return <StyledCard></StyledCard>;
 };
 
 export default PlayerCard;
