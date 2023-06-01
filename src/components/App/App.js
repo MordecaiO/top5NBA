@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <MainRow>
+      <MainRow className="main-row">
         <PlayerCard />
       </MainRow>
     </div>
