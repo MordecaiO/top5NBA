@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainRow = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content ;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 400px;
