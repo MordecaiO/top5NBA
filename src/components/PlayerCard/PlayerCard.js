@@ -6,7 +6,7 @@ const StyledCard = styled.div`
   border-radius: 10px;
   transition: background 0.8s;
   overflow: hidden;
-  background-color: rgb(209 26 28);
+  background-color: ${(props) => props.bgColor};
   background-size: 300px
   box-shadow: 0 70px 63px -60px #000000;
   display: flex;
@@ -28,19 +28,19 @@ const InnerBorder = styled.div`
 const TitleBox = styled.div`
   height: 30px;
   width: 250px;
-  background-color: rgb(209 26 28);
+  background-color: ${(props) => props.bgColor};
   border-radius: 25px;
   border-width: 2.5px;
   border-style: solid;
-  border-color: rgb(196 195 32);
+  border-color: none;
   border-top: none;
 `;
 
-const PlayerCard = () => {
+const PlayerCard = ({ bgcolor }) => {
   return (
-    <StyledCard>
+    <StyledCard bgColor={bgcolor}>
       <InnerBorder>
-        <TitleBox></TitleBox>
+        <TitleBox bgColor={bgcolor}></TitleBox>
       </InnerBorder>
     </StyledCard>
   );
