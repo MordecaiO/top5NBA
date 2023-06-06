@@ -1,22 +1,7 @@
 import PlayerCard from "../PlayerCard/PlayerCard";
 import { MainRow } from "../MainRow/MainRow";
 import "./App.css";
-
-const teamPrimaryColor = {
-  Atlanta: "#C8102E",
-  Boston: "#007A33",
-  Warriors: "#1D428A",
-  Lakers: "#552583",
-  Pheonix: "#1D1160",
-};
-
-const teamSecondaryColor = {
-  Atlanta: "##FDB927",
-  Boston: "##BA9653",
-  Warriors: "#FFC72C",
-  Lakers: "#FDB927",
-  Pheonix: "#E56020",
-};
+import { teamPrimaryColor, teamSecondaryColor } from "../colors";
 
 function App() {
   return (
