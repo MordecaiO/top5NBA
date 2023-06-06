@@ -28,7 +28,7 @@ const InnerBorder = styled.div`
   border-color: ${(props) => props.trimColor};
   border-radius: 5px;
   background-image: url(https://c8.alamy.com/zooms/9/ff9d1fe4132b41afbe2ee31f4739bf2a/2da09b5.jpg);
-  opacity: 0.75;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
 `;
@@ -42,6 +42,10 @@ const TitleBox = styled.div`
   border-style: solid;
   border-color: ${(props) => props.trimColor};
   border-top: none;
+  color: #fff;
+  font-family: "Racing Sans One", cursive;
+  font-size: 20px;
+  padding-top: 3px;
 `;
 
 const PlayerCard = ({ bgcolor, trimcolor }) => {
