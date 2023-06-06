@@ -1,7 +1,7 @@
-import PlayerCard from "../PlayerCard/PlayerCard";
-import { MainRow } from "../MainRow/MainRow";
+import PlayerCard from "./PlayerCard";
+import { MainRow } from "./MainRow";
 import "./App.css";
-import { teamPrimaryColor, teamSecondaryColor } from "../colors";
+import { teamPrimaryColor, teamSecondaryColor } from "./colors";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import tatum from "./tatum.png";
+import tatum from "./assets/tatum.png";
 
 const StyledCard = styled.div`
   height: 379px;
