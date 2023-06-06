@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import tatum from "./tatum.png";
 
 const StyledCard = styled.div`
   height: 379px;
@@ -48,6 +49,16 @@ const TitleBox = styled.div`
   padding-top: 3px;
 `;
 
+const PlayerImage = styled.img`
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 const PlayerCard = ({ bgcolor, trimcolor }) => {
   return (
     <StyledCard bgColor={bgcolor} trimColor={trimcolor}>
@@ -55,6 +66,7 @@ const PlayerCard = ({ bgcolor, trimcolor }) => {
         <TitleBox bgColor={bgcolor} trimColor={trimcolor}>
           Player
         </TitleBox>
+        <PlayerImage src={tatum} />
       </InnerBorder>
     </StyledCard>
   );
