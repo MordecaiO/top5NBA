@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import tatum from "./assets/tatum.png";
+import { keyframes } from "styled-components";
 
 const StyledCard = styled.div`
   height: 379px;
@@ -43,30 +43,38 @@ const TitleBox = styled.div`
   border-style: solid;
   border-color: ${(props) => props.trimColor};
   border-top: none;
-  color: #fff;
+  color: #ffffff;
   font-family: "Racing Sans One", cursive;
   font-size: 20px;
   padding-top: 3px;
 `;
 
+const bounceAnimation = keyframes`
+        0% { transform: translateY(0); }
+        50%  { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+`;
 const PlayerImage = styled.img`
   position: absolute;
   max-width: 100%;
-  width: 100%;
+  width: 90%;
   height: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 5%;
+  transform: translate(-50%, -9%);
+  animation-name: ${bounceAnimation};
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 `;
 
-const PlayerCard = ({ bgcolor, trimcolor }) => {
+const PlayerCard = ({ bgcolor, trimcolor, image, name }) => {
   return (
     <StyledCard bgColor={bgcolor} trimColor={trimcolor}>
       <InnerBorder trimColor={trimcolor}>
         <TitleBox bgColor={bgcolor} trimColor={trimcolor}>
-          Player
+          {name}
         </TitleBox>
-        <PlayerImage src={tatum} />
+        <PlayerImage src={image} />
       </InnerBorder>
     </StyledCard>
   );
