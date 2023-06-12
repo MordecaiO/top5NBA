@@ -29,7 +29,7 @@ const InnerBorder = styled.div`
   border-radius: 5px;
   background-image: url(https://c8.alamy.com/zooms/9/ff9d1fe4132b41afbe2ee31f4739bf2a/2da09b5.jpg);
   opacity: 0.9;
-  display: flex;
+  display: grid;
   justify-content: center;
 `;
 
@@ -46,6 +46,16 @@ const TitleBox = styled.div`
   font-family: "Racing Sans One", cursive;
   font-size: 20px;
   padding-top: 3px;
+`;
+
+const InfoCover = styled.div`
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 250px solid ${(props) => props.bgColor};
+  transform: translateX(126.5px) translateY(-66.5px) rotate(261deg);
 `;
 
 const PlayerImage = styled.img`
@@ -65,6 +75,7 @@ const PlayerCard = ({ bgcolor, trimcolor, image, name }) => {
         <TitleBox bgColor={bgcolor} trimColor={trimcolor}>
           {name}
         </TitleBox>
+        <InfoCover bgColor={bgcolor} />
         <PlayerImage src={image} />
       </InnerBorder>
     </StyledCard>
