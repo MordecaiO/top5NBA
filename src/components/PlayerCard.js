@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { keyframes } from "styled-components";
 
 const StyledCard = styled.div`
   height: 379px;
@@ -49,22 +48,14 @@ const TitleBox = styled.div`
   padding-top: 3px;
 `;
 
-const bounceAnimation = keyframes`
-        0% { transform: translateY(0); }
-        50%  { transform: translateY(-10px); }
-        100% { transform: translateY(0); }
-`;
 const PlayerImage = styled.img`
   position: absolute;
   max-width: 100%;
   width: 90%;
   height: auto;
-  top: 45%;
-  left: 5%;
+  top: 49%;
+  left: 50%;
   transform: translate(-50%, -9%);
-  animation-name: ${bounceAnimation};
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
 `;
 
 const PlayerCard = ({ bgcolor, trimcolor, image, name }) => {

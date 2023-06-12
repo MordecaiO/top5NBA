@@ -5,7 +5,7 @@ export const MainRow = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 400px;
   border-style: solid;
 `;
