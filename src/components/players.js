@@ -1,16 +1,19 @@
+import tatum from "./assets/tatum.png";
+import stephsmall from "./assets/steph-small.png";
+
 export const players = [
   {
     player: "Jason Tatum",
     teamPrimaryColor: "#007A33",
     teamSecondaryColor: "#ba9653",
-    image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1628369.png",
+    image: tatum,
     team: "Boston Celtics",
   },
   {
     player: "Stephen Curry",
     teamPrimaryColor: "#1D428A",
     teamSecondaryColor: "#ffc72c",
-    image: "https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png",
+    image: stephsmall,
     team: "Golden State Warriors",
   },
   {
