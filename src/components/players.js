@@ -1,6 +1,7 @@
 import tatum from "./assets/tatum.png";
 import stephsmall from "./assets/steph-small.png";
 import trae from "./assets/Trae3.png";
+import bron from "./assets/bron2.png";
 export const players = [
   {
     player: "Jason Tatum",
@@ -27,7 +28,7 @@ export const players = [
     player: "Lebron James",
     teamPrimaryColor: "#552583",
     teamSecondaryColor: "#FDB927",
-    image: "https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png",
+    image: bron,
     team: "Los Angeles Lakers",
   },
   {
