@@ -2,6 +2,7 @@ import tatum from "./assets/tatum.png";
 import stephsmall from "./assets/steph-small.png";
 import trae from "./assets/Trae3.png";
 import bron from "./assets/bron2.png";
+import book from "./assets/book.png";
 export const players = [
   {
     player: "Jason Tatum",
@@ -35,7 +36,7 @@ export const players = [
     player: "Devin Booker",
     teamPrimaryColor: "#1D1160",
     teamSecondaryColor: "#E56020",
-    image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1626164.png",
+    image: book,
     team: "Pheonix Suns",
   },
 ];
