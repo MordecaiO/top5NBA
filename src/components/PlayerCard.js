@@ -53,7 +53,7 @@ const TitleBox = styled.div`
 const PlayerImage = styled.img`
   max-height: 80%;
   max-width: 280px;
-  border: solid;
+
   margin: 0px;
   object-fit: cover;
 `;
