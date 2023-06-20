@@ -1,6 +1,6 @@
 import tatum from "./assets/tatum.png";
 import stephsmall from "./assets/steph-small.png";
-
+import trae from "./assets/Trae3.png";
 export const players = [
   {
     player: "Jason Tatum",
@@ -20,7 +20,7 @@ export const players = [
     player: "Trey Young",
     teamPrimaryColor: "#e03a3e",
     teamSecondaryColor: "#c1d32f",
-    image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1629027.png",
+    image: trae,
     team: "Atlanta Hawks",
   },
   {

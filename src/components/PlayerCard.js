@@ -28,7 +28,7 @@ const InnerBorder = styled.div`
   border-color: ${(props) => props.trimColor};
   border-radius: 5px;
   background-image: url(https://c8.alamy.com/zooms/9/ff9d1fe4132b41afbe2ee31f4739bf2a/2da09b5.jpg);
-  opacity: 0.9;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
