@@ -50,6 +50,15 @@ const StyledCardBack = styled.div`
   transform: rotateY(180deg);
 `;
 
+const Accolades = styled.div`
+  height: 60%;
+  width: 80%;
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  font-family: "Racing Sans One", cursive;
+`;
+
 const InnerBorder = styled.div`
   height: 359px;
   width: 280px;
@@ -88,7 +97,7 @@ const PlayerImage = styled.img`
   object-fit: cover;
 `;
 
-const PlayerCard = ({ bgcolor, trimcolor, image, name }) => {
+const PlayerCard = ({ bgcolor, trimcolor, image, name, accolades }) => {
   return (
     <Card>
       <StyledCardFront bgColor={bgcolor} trimColor={trimcolor}>
@@ -101,6 +110,7 @@ const PlayerCard = ({ bgcolor, trimcolor, image, name }) => {
       </StyledCardFront>
       <StyledCardBack bgColor={bgcolor} trimColor={trimcolor}>
         <InnerBorder trimColor={trimcolor}></InnerBorder>
+        <Accolades>{accolades}</Accolades>
       </StyledCardBack>
     </Card>
   );

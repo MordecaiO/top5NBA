@@ -29,7 +29,7 @@ export const players = [
     image: trae,
     team: "Atlanta Hawks",
     accolades:
-      "3× NBA All-Star (2020, 2022, 2024), NBA All-Rookie First Team (2019),  NCAA season scoring leader (2018)",
+      "3× NBA All-Star (2020, 2022, 2024), NBA All-Rookie First Team (2019),  NCAA season scoring and assists leader (2018)",
   },
   {
     player: "Lebron James",

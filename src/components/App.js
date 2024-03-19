@@ -14,6 +14,7 @@ function App() {
               trimcolor={player.teamSecondaryColor}
               image={player.image}
               name={player.player}
+              accolades={player.accolades}
             />
           );
         })}
