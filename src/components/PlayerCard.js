@@ -1,16 +1,39 @@
 import styled from "styled-components";
+const Card = styled.div`
+  height: 400px;
+  width: 310px;
+  margin: 15px 20px;
+  position: relative;
+`;
 
-const StyledCard = styled.div`
+const StyledCardFront = styled.div`
   height: 379px;
   width: 300px;
-  margin: 10px;
-  padding: 5px;
+  z-index: 2;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
   border-color: ${(props) => props.trimColor};
   transition: background 0.8s;
 
+  background-color: ${(props) => props.bgColor};
+  background-size: 300px;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+`;
+
+const StyledCardBack = styled.div`
+  height: 379px;
+  width: 300px;
+  z-index: 1;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: ${(props) => props.trimColor};
+  transition: background 0.8s;
   background-color: ${(props) => props.bgColor};
   background-size: 300px;
   box-shadow: 0 70px 63px -60px #000000;
@@ -60,14 +83,19 @@ const PlayerImage = styled.img`
 
 const PlayerCard = ({ bgcolor, trimcolor, image, name }) => {
   return (
-    <StyledCard bgColor={bgcolor} trimColor={trimcolor}>
-      <InnerBorder trimColor={trimcolor}>
-        <TitleBox bgColor={bgcolor} trimColor={trimcolor}>
-          {name}
-        </TitleBox>
-        <PlayerImage src={image} />
-      </InnerBorder>
-    </StyledCard>
+    <Card>
+      <StyledCardFront bgColor={bgcolor} trimColor={trimcolor}>
+        <InnerBorder trimColor={trimcolor}>
+          <TitleBox bgColor={bgcolor} trimColor={trimcolor}>
+            {name}
+          </TitleBox>
+          <PlayerImage src={image} />
+        </InnerBorder>
+      </StyledCardFront>
+      <StyledCardBack>
+        <InnerBorder trimColor={trimcolor}></InnerBorder>
+      </StyledCardBack>
+    </Card>
   );
 };
 
