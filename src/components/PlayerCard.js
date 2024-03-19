@@ -6,7 +6,7 @@ const Card = styled.div`
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.8s ease-in;
-  &:active {
+  &:hover {
     transform: rotateY(180deg);
   }
 `;
