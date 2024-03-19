@@ -4,6 +4,11 @@ const Card = styled.div`
   width: 310px;
   margin: 15px 20px;
   position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease-in;
+  &:active {
+    transform: rotateY(180deg);
+  }
 `;
 
 const StyledCardFront = styled.div`
@@ -23,6 +28,7 @@ const StyledCardFront = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
+  backface-visibility: hidden;
 `;
 
 const StyledCardBack = styled.div`
@@ -41,6 +47,7 @@ const StyledCardBack = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  transform: rotateY(180deg);
 `;
 
 const InnerBorder = styled.div`
@@ -92,7 +99,7 @@ const PlayerCard = ({ bgcolor, trimcolor, image, name }) => {
           <PlayerImage src={image} />
         </InnerBorder>
       </StyledCardFront>
-      <StyledCardBack>
+      <StyledCardBack bgColor={bgcolor} trimColor={trimcolor}>
         <InnerBorder trimColor={trimcolor}></InnerBorder>
       </StyledCardBack>
     </Card>
