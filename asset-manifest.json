@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.8af35288.css",
-    "main.js": "/static/js/main.b2508f28.js",
-    "static/media/tatum.png": "/static/media/tatum.b8feb1fe229b82385eff.png",
-    "static/media/bron2.png": "/static/media/bron2.0f96af78aab0481f36ae.png",
-    "static/media/steph-small.png": "/static/media/steph-small.f7235c853b9c6129823c.png",
-    "static/media/Trae3.png": "/static/media/Trae3.9d79917d87bb83fd2d39.png",
-    "static/media/book.png": "/static/media/book.97ed372621d8d3ac8c4a.png",
-    "index.html": "/index.html",
-    "main.8af35288.css.map": "/static/css/main.8af35288.css.map",
-    "main.b2508f28.js.map": "/static/js/main.b2508f28.js.map"
+    "main.css": "/top5NBA/static/css/main.8af35288.css",
+    "main.js": "/top5NBA/static/js/main.a6f28087.js",
+    "static/media/tatum.png": "/top5NBA/static/media/tatum.b8feb1fe229b82385eff.png",
+    "static/media/bron2.png": "/top5NBA/static/media/bron2.0f96af78aab0481f36ae.png",
+    "static/media/steph-small.png": "/top5NBA/static/media/steph-small.f7235c853b9c6129823c.png",
+    "static/media/Trae3.png": "/top5NBA/static/media/Trae3.9d79917d87bb83fd2d39.png",
+    "static/media/book.png": "/top5NBA/static/media/book.97ed372621d8d3ac8c4a.png",
+    "index.html": "/top5NBA/index.html",
+    "main.8af35288.css.map": "/top5NBA/static/css/main.8af35288.css.map",
+    "main.a6f28087.js.map": "/top5NBA/static/js/main.a6f28087.js.map"
   },
   "entrypoints": [
     "static/css/main.8af35288.css",
-    "static/js/main.b2508f28.js"
+    "static/js/main.a6f28087.js"
   ]
 }
